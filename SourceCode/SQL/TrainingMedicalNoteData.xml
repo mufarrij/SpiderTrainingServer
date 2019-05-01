@@ -1,0 +1,131 @@
+<Table>
+    <Name>TrainingMedicalNoteData</Name>
+    <Columns>
+
+        <Column>
+            <Name>primaryKey</Name>
+            <Type>Integer</Type>
+            <Size>4</Size>
+            <Flags>
+                <Flag>Identity</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>id</Name>
+            <Type>VariableString</Type>
+            <Size>50</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+                <Flag>Indexed</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>creator</Name>
+            <Type>VariableString</Type>
+            <Size>100</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>created</Name>
+            <Type>Timestamp</Type>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>reason</Name>
+            <Type>VariableString</Type>
+            <Size>500</Size>
+            <Flags>
+             <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>active</Name>
+            <Type>Integer</Type>
+            <Size>1</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>latest</Name>
+            <Type>Integer</Type>
+            <Size>1</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>signed</Name>
+            <Type>Integer</Type>
+            <Size>1</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>dateTime</Name>
+            <Type>Timestamp</Type>
+            <Flags>
+             <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>noteType</Name>
+            <Type>VariableString</Type>
+            <Size>300</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>noteText</Name>
+            <Type>VariableString</Type>
+            <Size>900</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>unit</Name>
+            <Type>Integer</Type>
+            <Size>8</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>contact</Name>
+            <Type>Integer</Type>
+            <Size>8</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+        <Column>
+            <Name>careProvider</Name>
+            <Type>Integer</Type>
+            <Size>8</Size>
+            <Flags>
+                <Flag>NULL</Flag>
+            </Flags>
+        </Column>
+
+    </Columns>
+</Table>

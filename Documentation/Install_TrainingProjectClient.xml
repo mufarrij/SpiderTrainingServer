@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Install>
+    <Service>
+        <Path>se.cambiosys.spider.medicalrecordsmodule</Path>
+        <Version>1.0.0</Version>
+    </Service>
+    <Properties>
+        <Properties Name="Storage.properties">
+            <Location Key="StorageService.Path">StorageService</Location>
+            <Value Key="TrainingMedicalNoteData">JDBC:MSSQL//SpiderIII/</Value>
+        </Properties>
+        <Properties Name="TrainingMedicalNoteData.properties">
+            <Location Key="StorageService.Path">StorageService</Location>
+            <Value Key="Area.TrainingMedicalNoteData">TrainingMedicalNoteData</Value>
+            <Value Key="Field.TrainingMedicalNoteData.key">primaryKey</Value>
+        </Properties>
+    </Properties>
+    <Access Base ="se.cambiosys">
+            <Access Active ="true">
+               <Path>spider.medicalrecordsmodule.AccessPermission</Path>
+               <Value>AllowRead</Value>
+                <Value>AllowWrite</Value>
+            </Access>
+    </Access>
+</Install>
